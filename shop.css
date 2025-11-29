@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    background: #0a0a0f;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR (same style as main site) */
+.navbar {
+    width: 100%;
+    padding: 15px 5%;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 45px;
+}
+
+.logo-text {
+    font-size: 1.4rem;
+    color: #7fa2ff;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #8598ff;
+}
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    padding: 60px 0;
+    background: linear-gradient(135deg, #1e2335, #0a0b10);
+}
+
+/* CATEGORY BUTTONS */
+
+.category-bar {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.cat-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    background: #202431;
+    border: 1px solid #3c4a66;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.cat-btn:hover {
+    background: #5c6cff;
+}
+
+/* PRODUCT GRID */
+
+.shop-container {
+    padding: 40px 5%;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 14px;
+    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.12);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    border-color: #657aff;
+}
+
+.product-card img {
+    width: 100%;
+    height: 170px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.price {
+    color: #8fa8ff;
+    font-weight: bold;
+}
+
+.buy-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background: #5c6cff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.buy-btn:hover {
+    background: #7c8dff;
+}

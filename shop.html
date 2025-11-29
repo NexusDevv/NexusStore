@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Shop</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="nav-left">
+        <img src="assets/nexus-logo.webp" class="logo-img">
+        <h2 class="logo-text">Nexus Development</h2>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="https://discord.gg/8qy7GtmE" target="_blank">Discord</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <h1>Our Products</h1>
+    <p>FiveM Scripts • MLOs • UI • Bots • Services</p>
+</header>
+
+<!-- CATEGORY FILTER BUTTONS -->
+<div class="category-bar">
+    <button class="cat-btn" data-category="all">All</button>
+    <button class="cat-btn" data-category="script">Scripts</button>
+    <button class="cat-btn" data-category="mlo">MLOs</button>
+    <button class="cat-btn" data-category="ui">UI / NUI</button>
+    <button class="cat-btn" data-category="bot">Bots</button>
+    <button class="cat-btn" data-category="bundle">Bundles</button>
+    <button class="cat-btn" data-category="service">Services</button>
+</div>
+
+<section class="shop-container">
+    <div class="product-grid" id="productGrid"></div>
+</section>
+
+<script src="shop.js"></script>
+
+</body>
+</html>

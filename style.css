@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0a0a0f;
+    color: white;
+}
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    padding: 15px 5%;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 45px;
+}
+
+.logo-text {
+    font-size: 1.4rem;
+    color: #7fa2ff;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    color: #8598ff;
+}
+
+/* HERO */
+
+.hero {
+    height: 60vh;
+    background: linear-gradient(135deg, #1a1f2e, #0a0c12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    text-shadow: 0 0 20px #5070ff;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #5c6cff;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #7280ff;
+    transform: translateY(-3px);
+}
+
+/* SECTIONS */
+
+section {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+/* BUNDLES */
+
+.bundles {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    width: 300px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #617aff;
+}
+
+.card h3 span {
+    float: right;
+    color: #7ea1ff;
+}
+
+.card ul {
+    margin-top: 15px;
+    list-style: none;
+    opacity: 0.9;
+}
+
+.card ul li {
+    margin-bottom: 8px;
+}
+
+/* GRID */
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.service-box {
+    padding: 25px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-6px);
+    border-color: #7f9cff;
+}
+
+/* FULL SERVER */
+
+.fullserver .price-range span {
+    background: linear-gradient(90deg, #6c8fff, #98aaff);
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+}
+
+.note {
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background: #08080d;
+    margin-top: 40px;
+}
