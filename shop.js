@@ -2,18 +2,18 @@ const products = [
 
     {
         name: "Advanced Blackmarket System",
-        price: 15,
-        img: "https://via.placeholder.com/500x300",
-        desc: "Optimized blackmarket system for QBCore / QBX / OX.",
-        link: "https://your-link",
+        price: 0,
+        img: "assets/products/blackmarket.png",
+        desc: "Fully optimized blackmarket for QBX.",
+        link: "https://github.com/NexusDevv/MrRay_blackmarket",
         category: "script"
     },
 
     {
         name: "Nexus Scoreboard UI",
         price: 12,
-        img: "https://via.placeholder.com/500x300",
-        desc: "Modern NUI scoreboard with animations and blur.",
+        img: "assets/products/scoreboard.png",
+        desc: "Modern NUI scoreboard with animation & blur.",
         link: "https://your-link",
         category: "ui"
     },
@@ -21,26 +21,26 @@ const products = [
     {
         name: "Nexus Garage System",
         price: 18,
-        img: "https://via.placeholder.com/500x300",
-        desc: "Supports impound, job garages, and police.",
+        img: "assets/products/garage.png",
+        desc: "Police • Public • Impound • Custom garages.",
         link: "https://your-link",
         category: "script"
     },
 
     {
-        name: "Anti-Cheat Pro+",
+        name: "Anti-Cheat PRO+",
         price: 25,
-        img: "https://via.placeholder.com/500x300",
-        desc: "Speedhack / aimbot / resource tamper protections.",
+        img: "assets/products/anticheat.png",
+        desc: "Speedhack, Aimbot, Resource Tamper detection.",
         link: "https://your-link",
         category: "service"
     },
 
     {
-        name: "Ticket Bot PRO",
+        name: "Discord Ticket Bot",
         price: 5,
-        img: "https://via.placeholder.com/500x300",
-        desc: "Discord ticket bot with logs and transcripts.",
+        img: "assets/products/ticketbot.png",
+        desc: "Ticket bot with logging & transcripts.",
         link: "https://your-link",
         category: "bot"
     },
@@ -48,15 +48,14 @@ const products = [
     {
         name: "Full Server Bundle",
         price: 150,
-        img: "https://via.placeholder.com/500x300",
-        desc: "Complete FiveM server build with UI + systems.",
+        img: "assets/products/fullserver.png",
+        desc: "Complete setup with UI, jobs, systems, optimization.",
         link: "https://your-link",
         category: "bundle"
     }
 
 ];
 
-// LOAD PRODUCTS
 const grid = document.getElementById("productGrid");
 
 function renderProducts(category = "all") {
@@ -82,10 +81,8 @@ function renderProducts(category = "all") {
 
 renderProducts();
 
-// CATEGORY FILTER
 document.querySelectorAll(".cat-btn").forEach(btn => {
     btn.addEventListener("click", () => {
-        const cat = btn.getAttribute("data-category");
-        renderProducts(cat);
+        renderProducts(btn.dataset.category);
     });
 });
