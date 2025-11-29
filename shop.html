@@ -9,10 +9,10 @@
 <body>
 
 <nav class="navbar">
-    <div class="nav-left">
+    <a href="index.html" class="nav-left">
         <img src="assets/nexus-logo.webp" class="logo-img">
         <h2 class="logo-text">Nexus Development</h2>
-    </div>
+    </a>
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="shop.html">Shop</a></li>
@@ -22,22 +22,22 @@
 
 <header class="hero">
     <h1>Our Products</h1>
-    <p>FiveM Scripts • MLOs • UI • Bots • Services</p>
+    <p>FiveM Scripts • MLOs • UI • Bots • Bundles • Services</p>
 </header>
 
-<!-- CATEGORY FILTER BUTTONS -->
+<!-- CATEGORY FILTER -->
 <div class="category-bar">
     <button class="cat-btn" data-category="all">All</button>
     <button class="cat-btn" data-category="script">Scripts</button>
     <button class="cat-btn" data-category="mlo">MLOs</button>
-    <button class="cat-btn" data-category="ui">UI / NUI</button>
+    <button class="cat-btn" data-category="ui">UI</button>
     <button class="cat-btn" data-category="bot">Bots</button>
     <button class="cat-btn" data-category="bundle">Bundles</button>
     <button class="cat-btn" data-category="service">Services</button>
 </div>
 
 <section class="shop-container">
-    <div class="product-grid" id="productGrid"></div>
+    <div id="productGrid" class="product-grid"></div>
 </section>
 
 <script src="shop.js"></script>
