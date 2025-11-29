@@ -1,126 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nexus Development - FiveM & Discord Services</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Development</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar">
-    <a href="index.html" class="nav-left">
-        <img src="assets/nexus-logo.webp" class="logo-img" alt="Nexus Logo">
-        <h2 class="logo-text">Nexus Development</h2>
-    </a>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="https://discord.gg/8qy7GtmE" target="_blank">Discord</a></li>
-    </ul>
+    <div class="logo">
+        <img src="assets/nexus-logo.webp" alt="Nexus Logo">
+        <span>Nexus Development</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="https://discord.gg/8qy7GtmE" target="_blank">Discord</a>
+    </div>
 </nav>
 
-<!-- HERO -->
-<header class="hero">
-    <div class="hero-content">
-        <h1>Nexus Development</h1>
-        <p>Advanced FiveM Development • Full Server Builds • Discord Bots</p>
-        <a href="https://discord.gg/8qy7GtmE" target="_blank" class="button">Join Our Discord</a>
-    </div>
-</header>
-
-<!-- ABOUT -->
-<section class="about">
-    <h2>Why Choose Us?</h2>
-    <p>We create high-quality FiveM systems, custom scripts, UI, anti-cheat systems, and Discord bots. Every project is optimized for performance and built with modern design.</p>
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>Nexus Development</h1>
+    <p>Advanced FiveM Development • Full Server Builds • Discord Bots</p>
+    <a class="btn" href="https://discord.gg/8qy7GtmE" target="_blank">Join Our Discord</a>
 </section>
 
-<!-- DEV BUNDLES -->
-<section class="bundles">
-    <h2>Developer Bundles</h2>
-
-    <div class="card">
-        <h3>Starter Pack <span>$20</span></h3>
-        <ul>
-            <li>Bug Fixes</li>
-            <li>Script Installation</li>
-            <li>Small Script Edits</li>
-            <li>Config Tweaks</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h3>Advanced Pack <span>$50</span></h3>
-        <ul>
-            <li>Custom Scripts</li>
-            <li>Optimization</li>
-            <li>Job Creation</li>
-            <li>NUI / UI Development</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h3>Premium Pack <span>$100</span></h3>
-        <ul>
-            <li>Advanced Systems</li>
-            <li>UI & Scoreboard</li>
-            <li>MLO Installation</li>
-            <li>Anti-Cheat Protection</li>
-        </ul>
-    </div>
-</section>
-
-<!-- FIVE M SERVICES -->
-<section class="services">
-    <h2>FiveM Services</h2>
-
-    <div class="service-grid">
-        <div class="service-box"><h3>Custom Scripts</h3><p>Client/Server Lua systems.</p></div>
-        <div class="service-box"><h3>NUI UI</h3><p>HTML/CSS/JS modern interfaces.</p></div>
-        <div class="service-box"><h3>Optimization</h3><p>0.00ms resources • Debugging.</p></div>
-        <div class="service-box"><h3>Framework Setup</h3><p>QB • QBX • OX • ESX</p></div>
-        <div class="service-box"><h3>Anti-Cheat</h3><p>Custom protections.</p></div>
-        <div class="service-box"><h3>MLO Setup</h3><p>Installation & metadata fixes.</p></div>
-    </div>
-</section>
-
-<!-- FULL SERVER DEVELOPMENT (FIXED) -->
-<section class="fullserver">
-    <h2>Full Server Development</h2>
-
-    <p class="full-desc">
-        Every server build is fully custom. Pricing depends on features, framework,
-        custom scripts, UI, and complexity.
+<!-- WHY CHOOSE US -->
+<section class="container">
+    <h2 class="title">Why Choose Us?</h2>
+    <p class="subtitle">
+        We create high-quality FiveM systems, custom scripts, UI, anti-cheat solutions, full servers, and Discord bots.
+        Every project is optimized for performance and built with modern design.
     </p>
-
-    <div class="price-box">
-        <span class="price-icon">💎</span>
-        <span class="price-text">$150 — $600+</span>
-    </div>
-
-    <p class="note">Free quote available on Discord.</p>
-    <a href="https://discord.gg/8qy7GtmE" class="button" target="_blank">Request Full Server</a>
 </section>
 
-<!-- DISCORD BOTS -->
-<section class="discord-dev">
-    <h2>Discord Bot Development</h2>
+<!-- BUNDLES SECTION -->
+<section class="container">
+    <h2 class="title">Developer Bundles</h2>
 
-    <div class="service-grid">
-        <div class="service-box"><h3>Ticket Bots</h3><p>Logging + transcripts.</p></div>
-        <div class="service-box"><h3>Verification</h3><p>Captcha, email, whitelist.</p></div>
-        <div class="service-box"><h3>Logging Bots</h3><p>Mod logs + integrations.</p></div>
-        <div class="service-box"><h3>Custom Bots</h3><p>Custom APIs & tools.</p></div>
+    <div class="cards-grid">
+
+        <div class="card">
+            <h3>Starter Pack</h3>
+            <span class="price">$20</span>
+            <ul>
+                <li>Bug Fixes</li>
+                <li>Script Installation</li>
+                <li>Small Script Edits</li>
+                <li>Config Tweaks</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Advanced Pack</h3>
+            <span class="price">$50</span>
+            <ul>
+                <li>Custom Scripts</li>
+                <li>Optimization</li>
+                <li>UI Enhancements</li>
+                <li>Database Work</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Premium Pack</h3>
+            <span class="price">$100</span>
+            <ul>
+                <li>Advanced Systems</li>
+                <li>UI + Scoreboards</li>
+                <li>Full Server Enhancements</li>
+                <li>Performance Tuning</li>
+            </ul>
+        </div>
+
     </div>
 </section>
-
-<!-- FOOTER -->
-<footer>
-    <p>Nexus Development © 2025</p>
-    <a href="https://discord.gg/8qy7GtmE">Join Discord</a>
-</footer>
 
 </body>
 </html>
+
