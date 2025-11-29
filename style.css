@@ -11,10 +11,9 @@ body {
 }
 
 /* NAVBAR */
-
 .navbar {
     width: 100%;
-    padding: 15px 5%;
+    padding: 12px 5%;
     background: rgba(0,0,0,0.4);
     display: flex;
     align-items: center;
@@ -25,42 +24,41 @@ body {
 .nav-left {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    text-decoration: none;
 }
 
 .logo-img {
-    height: 45px;
+    height: 38px;
+    width: auto;
+    filter: drop-shadow(0 0 4px rgba(0,150,255,0.5));
 }
 
 .logo-text {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
+    font-weight: 600;
     color: #7fa2ff;
 }
 
 .navbar ul {
     display: flex;
     gap: 30px;
-}
-
-.navbar ul li {
     list-style: none;
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
-    font-weight: 500;
-    transition: 0.2s;
+    transition: .2s;
 }
 
 .navbar a:hover {
-    color: #8598ff;
+    color: #7ea1ff;
 }
 
 /* HERO */
-
 .hero {
-    height: 60vh;
+    height: 56vh;
     background: linear-gradient(135deg, #1a1f2e, #0a0c12);
     display: flex;
     align-items: center;
@@ -69,35 +67,32 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
-    text-shadow: 0 0 20px #5070ff;
+    font-size: 3.4rem;
+    text-shadow: 0 0 22px #5a7bff;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
-    opacity: 0.8;
     margin-top: 10px;
+    opacity: 0.85;
+    font-size: 1.15rem;
 }
 
 .button {
-    display: inline-block;
     margin-top: 20px;
     padding: 12px 30px;
-    background: #5c6cff;
-    border-radius: 8px;
+    background: #6273ff;
+    border-radius: 9px;
     color: white;
     text-decoration: none;
+    transition: .3s;
     font-weight: 600;
-    transition: 0.3s;
 }
 
 .button:hover {
-    background: #7280ff;
-    transform: translateY(-3px);
+    background: #7485ff;
 }
 
-/* SECTIONS */
-
+/* SECTION BASE */
 section {
     padding: 60px 7%;
     text-align: center;
@@ -105,36 +100,35 @@ section {
 
 h2 {
     font-size: 2.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 /* BUNDLES */
-
 .bundles {
     display: flex;
-    gap: 30px;
+    gap: 25px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .card {
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(10px);
-    padding: 30px;
     width: 300px;
+    padding: 30px;
     border-radius: 15px;
-    border: 1px solid rgba(255,255,255,0.1);
-    transition: 0.3s;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    transition: .3s;
 }
 
 .card:hover {
     transform: translateY(-6px);
-    border-color: #617aff;
+    border-color: #687eff;
 }
 
 .card h3 span {
     float: right;
-    color: #7ea1ff;
+    color: #88a0ff;
 }
 
 .card ul {
@@ -147,48 +141,70 @@ h2 {
     margin-bottom: 8px;
 }
 
-/* GRID */
-
+/* GRID BOXES */
 .service-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
     gap: 25px;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .service-box {
+    background: rgba(255,255,255,0.05);
     padding: 25px;
-    background: rgba(255,255,255,0.04);
     border-radius: 12px;
-    border: 1px solid rgba(255,255,255,0.1);
-    transition: 0.3s;
+    border: 1px solid rgba(255,255,255,0.12);
+    transition: .3s;
 }
 
 .service-box:hover {
     transform: translateY(-6px);
-    border-color: #7f9cff;
+    border-color: #8da1ff;
 }
 
-/* FULL SERVER */
+/* FULL SERVER SECTION FIX */
+.fullserver {
+    padding: 60px 7%;
+    text-align: center;
+}
 
-.fullserver .price-range span {
-    background: linear-gradient(90deg, #6c8fff, #98aaff);
-    padding: 5px 15px;
+.full-desc {
+    font-size: 1.05rem;
+    opacity: 0.9;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.price-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.price-icon {
+    font-size: 1.9rem;
+}
+
+.price-text {
+    font-size: 1.4rem;
+    background: linear-gradient(90deg, #6a8aff, #95aaff);
+    padding: 6px 16px;
     border-radius: 10px;
     color: black;
     font-weight: 700;
 }
 
 .note {
-    opacity: 0.8;
-    margin-top: 10px;
+    opacity: 0.85;
+    margin: 10px 0 25px;
 }
 
 /* FOOTER */
-
 footer {
+    background: #0a0a11;
     padding: 30px;
     text-align: center;
-    background: #08080d;
     margin-top: 40px;
 }
